@@ -11,8 +11,8 @@
 
 Developers:
 
-- Esay&emsp;&ensp;&ensp; Hernandez
 - Daniel&emsp;&ensp;Naranjo
-- Yesenia&emsp;Lopez 
-- Talia&emsp;&emsp;&ensp;Pichardo
+- Esay&emsp;&ensp;&ensp; Hernandez
 - Sarah&emsp;&emsp;Weinstein
+- Talia&emsp;&emsp;&ensp;Pichardo
+- Yesenia&emsp;Lopez 
