@@ -6,7 +6,7 @@
   
 </div>
   
-## Social Fitness &amp; Networking
+## Social Fitness
 
 Developers:
 
