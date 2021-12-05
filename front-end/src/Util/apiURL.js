@@ -7,5 +7,5 @@ export const apiURL = () => {
 export const sokaURL = () => {
   return window.location.hostname === 'localhost'
     ? 'http://localhost:3000'
-    : 'https://frosty-hypatia-5b10b3.netlify.app'
+    : 'https://talia-sk.netlify.app/'
 }
