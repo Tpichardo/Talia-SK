@@ -93,7 +93,7 @@ const MapBox = ({ adjustmentHeight, adjustmentWidth }) => {
           </ReactMapGL>
         )}
 
-      {window.location.pathname === `/map` &&  (
+      {window.location.pathname === `/map` && (
         <ReactMapGL
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle='mapbox://styles/tpichardo/cktjfw1vh05kc18qq97wjjwrj'
@@ -104,13 +104,17 @@ const MapBox = ({ adjustmentHeight, adjustmentWidth }) => {
           <Source id='my-data' type='geojson' data={geojson}>
             <Layer {...layerStyle} />
           </Source>
+          {console.log(sokaUsers)}
+
           {
+
             sokaUsers.map(sokaUser => {
+              console.log(sokaUser.coordinates.latitude.toFixed(2))
 
               return (
                 <Marker
                   key={sokaUser.id}
-                  latitude={(sokaUser.coordinates && sokaUser.coordinates.latitude) || 40.7128}
+                  latitude={sokaUser.coordinates && Number(sokaUser.coordinates.latitude.toFixed(2)) || 40.7128}
                   longitude={(sokaUser.coordinates && sokaUser.coordinates.longitude) || -74.006}
                 >
                   <div>
